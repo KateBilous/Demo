@@ -1,5 +1,7 @@
-public class HelloWorld {
-    public HelloWorld() {
+package ru.stqa.pft.sandbox;
+
+public class MyFirstProgramm {
+    public MyFirstProgramm() {
     }
 
     public static void main(String[] args) {
