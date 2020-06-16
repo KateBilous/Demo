@@ -19,7 +19,7 @@ public class Point {
     public static void main(String[] args) {
 
 
-        Point distance = new Point(5, 7, 6, 9);
+        Point distance = new Point(7, 7, 5, -5);
         System.out.println("Distance between two points are " + distance.distance());
 
 
