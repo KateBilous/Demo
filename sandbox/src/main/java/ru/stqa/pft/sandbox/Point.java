@@ -3,15 +3,13 @@ package ru.stqa.pft.sandbox;
 
 public class Point {
     public double x1;
-    public double x2;
     public double y1;
-    public double y2;
 
-    public Point(double x1, double x2, double y1, double y2) {
+
+    public Point(double x1, double y1) {
         this.x1 = x1;
-        this.x2 = x2;
         this.y1 = y1;
-        this.y2 = y2;
+
 
     }
 
@@ -19,16 +17,17 @@ public class Point {
     public static void main(String[] args) {
 
 
-        Point distance = new Point(7, 7, 5, -5);
-        System.out.println("Distance between two points are " + distance.distance());
+        Point p1 = new Point(7, 5);
+        Point p2 = new Point(7, -5);
+        System.out.println("Distance between two points are " + p1.distance(p2));
 
 
     }
 
-    public double distance() {
+    public double distance(Point p2) {
 
-        double ac = Math.abs(this.x1 - this.x2);
-        double cb = Math.abs(this.y1 - this.y2);
+        double ac = Math.abs(this.x1 - p2.x1);
+        double cb = Math.abs(this.y1 - p2.y1);
         return Math.hypot(ac, cb);
 
 
